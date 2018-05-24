@@ -36,10 +36,10 @@
     <!--Used by SunshineDateUtils-->
     <!-- - - - - - - - - - - - - -->
 
-    <!-- For labelling today's forecast [CHAR LIMIT=15] -->
+    <!-- For labelling today's forecast_list_item [CHAR LIMIT=15] -->
     <string name="today">Today</string>
 
-    <!-- For labelling tomorrow's forecast [CHAR LIMIT=15] -->
+    <!-- For labelling tomorrow's forecast_list_item [CHAR LIMIT=15] -->
     <string name="tomorrow">Tomorrow</string>
 
     <!-- Date format [CHAR LIMIT=NONE] -->
