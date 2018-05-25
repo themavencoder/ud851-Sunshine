@@ -222,7 +222,23 @@ public class MainActivity extends AppCompatActivity implements ForecastAdapterOn
         }
 
         // TODO (2) Launch the map when the map menu item is clicked
+        if (id == R.id.action_map) {
+            checkForLocation();
+            return true;
 
+        }
         return super.onOptionsItemSelected(item);
+    }
+    private void checkForLocation() {
+        String addressString = "15, Assam Esso Street, Igando Lagos State, Nigeria";
+        Uri uri = Uri.parse("geo:0,0?q=" + addressString);
+
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(uri);
+
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
+
     }
 }
